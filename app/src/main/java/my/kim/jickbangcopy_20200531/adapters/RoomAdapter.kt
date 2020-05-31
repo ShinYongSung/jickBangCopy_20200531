@@ -37,7 +37,7 @@ class RoomAdapter(context:Context, resId: Int, list: List<Room>) : ArrayAdapter<
 
         addressAndFloorTxt.text = "${data.address}, ${data.getFormattedFloor()}층"
         descTxt.text = data.description
-        priceTxt.text = "${data.price}, ${data.getFormattedPrice()}"
+        priceTxt.text = data.getFormattedPrice()
 
         return row
 
