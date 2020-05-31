@@ -2,8 +2,12 @@ package my.kim.jickbangcopy_20200531
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import my.kim.jickbangcopy_20200531.datas.Room
 
 class MainActivity : BaseActivity() {
+
+    val rooms = ArrayList<Room>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +22,20 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setvalues() {
+
+        rooms.add(Room(8000, "마포구 서교동", 1, "마포 서교동의 방입니다."))
+        rooms.add(Room(8000, "마포구 서교동", 3, "마포 서교동의 방입니다."))
+        rooms.add(Room(8000, "마포구 서교동", 5, "마포 서교동의 방입니다."))
+        rooms.add(Room(8000, "마포구 서교동", 4, "마포 서교동의 방입니다."))
+        rooms.add(Room(8000, "마포구 성산동", 0, "마포 성산동의 방입니다."))
+        rooms.add(Room(8000, "마포구 성산동", 1, "마포 성산동의 방입니다."))
+        rooms.add(Room(8000, "마포구 성산동", 0, "마포 성산동의 방입니다."))
+        rooms.add(Room(8000, "마포구 망원동", -1, "마포 망원동의 방입니다."))
+        rooms.add(Room(8000, "마포구 망원동", -1, "마포 망원동의 방입니다."))
+        rooms.add(Room(8000, "마포구 망원동", 2, "마포 망원동의 방입니다."))
+        rooms.add(Room(8000, "마포구 망원동", 3, "마포 망원동의 방입니다."))
+
+
 
     }
 
